@@ -1,0 +1,156 @@
+// Place all the styles related to the api/users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-profile-container {
+  padding-top: 85px;
+  font-family: "Benton Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", "sans-serif";
+  letter-spacing: 0.5px;
+  align-content: center;
+
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #282C35;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    border-bottom: 4px solid #fff;
+    padding: 0px 50px;
+  }
+
+  a.active {
+    border-bottom: 4px solid #0093d7;
+  }
+
+  h3 {
+    font-family: "Benton Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 8px;
+    text-transform: uppercase;
+    color: #45494e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    -webkit-margin-after: 0.8em;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d2d6df;
+  }
+}
+
+.ticketed-event-container, .organized-event-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8fa;
+  padding-top: 20px;
+  padding-bottom: 35px;
+
+  li {
+    max-width: 625px;
+    min-width: 525px;
+  }
+}
+
+.upcoming-eventItem-container {
+  display: flex;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+  background: white;
+  margin: 5px 0px;
+  min-width: 400px;
+}
+
+.upcoming-eventItem-container:hover {
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15);
+
+  opacity: 1;
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+  -webkit-transition: opacity .45s cubic-bezier(0,0,.35,1);
+  transition: opacity .45s cubic-bezier(0,0,.35,1);
+}
+
+.upcoming-eventItem-img {
+  object-fit: cover;
+  height: 100px;
+  width: 190px;
+  padding: 10px;
+}
+
+.upcoming-eventItem-info {
+  font-family: "Benton Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  padding: 17px 3px;
+
+  p {
+    font-size: 12px;
+    color: #45494e;
+  }
+
+  h4 {
+    font-size: 15px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 2.5em;
+  }
+}
+
+#bookmarkedEvents-container {
+  background: #e0e0eb;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+}
+
+#no-saved-events-img {
+  opacity: 0.3;
+  margin: 65px auto 0 auto;
+  height: 265px;
+  width: 300px;
+  object-fit: cover;
+}
+
+#no-organized-events-img {
+  opacity: 0.3;
+  margin: 65px auto 0 auto;
+  height: 265px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.text-container {
+  padding: 20px 150px 0 150px;
+}
+
+.no-saved-events-text {
+  font-family: "Benton Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", "sans-serif";
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #666A73;
+  // margin: 15px 350px 30px 350px;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+@media only screen and (min-width: 800px) {
+  .ticketed-event-container {
+    li {
+      width: 66.67%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import 'navbar.scss';
+@import 'sessions.scss';
+@import 'userprofile.scss';
+@import 'static_pages.scss';
+@import 'events_index.scss';
+@import 'event_show.scss';
+@import 'event_form.scss';
+@import 'footer.scss';
+@import 'tickets.scss';
+@import 'bookmarks.scss';
+
+.error-loading {
+    text-align: center;
+    padding: 1em 2em;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue";
+    font-size: 18px;
+}

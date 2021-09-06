@@ -1,0 +1,14 @@
+<script id="bootstrap-current-user" type="text/javascript">
+  <% if logged_in? %>
+  	window.currentUser = <%= render("api/users/user.json.jbuilder",
+  		user: current_user).html_safe %>
+  <% end %>
+</script>
+
+<main id="root">
+    <div class="error-loading">
+        <h2>Whoops, there is a problem loading the page...</h2>
+        <h2>sorry about that =/</h2>
+        <h4>Click <a style="color: blue; text-decoration: underline;" href="<%= root_url %>">Here</a> to return Home</h4>
+    </div>
+</main>

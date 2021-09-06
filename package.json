@@ -1,0 +1,57 @@
+{
+  "name": "EventListenr",
+  "jest": {
+    "setupFiles": ["test-setup.js"]
+  },
+  "version": "1.0.0",
+  "description": "[Trello Link](https://trello.com/b/WcxLln60/eventlistenr)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gevuong/EventListenr"
+  },
+  "dependencies": {
+    "all": "^0.0.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "jquery": "^3.3.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-dropzone": "^3.13.3",
+    "react-jsx": "^1.0.0",
+    "react-modal": "^2.2.2",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "react-slick": "^0.23.1",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "slick-carousel": "^1.8.1",
+    "superagent": "^3.5.2",
+    "webpack": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "jest": "^22.4.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "postinstall": "webpack",
+    "heroku-postbuild": "webpack",
+    "start": "webpack --w --progress"
+  },
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
